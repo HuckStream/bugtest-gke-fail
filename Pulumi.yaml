@@ -1,4 +1,4 @@
-name: Poetry
+name: Bugtest-GKE-Fail
 runtime: python
 main: __main__.py
 description: Reproduction code for GKE failed state bug
