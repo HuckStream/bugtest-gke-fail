@@ -1,0 +1,18 @@
+name: Poetry
+runtime: python
+main: __main__.py
+description: Reproduction code for GKE failed state bug
+config:
+  gcp:region: us-east1
+  namespace:
+    type: string
+    description: Namsepace for resources.
+    default: huckstream
+  environment:
+    type: string
+    description: Environment name.
+    default: sbx
+  name:
+    type: string
+    description: Resource name.
+    default: gke-fail

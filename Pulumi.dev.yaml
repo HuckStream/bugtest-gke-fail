@@ -1,0 +1,5 @@
+environment:
+  - gcp-dev
+config:
+  gcp:region: us-east1
+  environment: dev
