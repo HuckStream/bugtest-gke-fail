@@ -1,8 +1,12 @@
 name: Bugtest-GKE-Fail
-runtime: python
+runtime:
+  name: python
+  options:
+    toolchain: poetry
 main: __main__.py
 description: Reproduction code for GKE failed state bug
 config:
+  csp: gcp
   gcp:region: us-east1
   namespace:
     type: string
